@@ -1,6 +1,6 @@
 // Nav responsiveness 
 function myFunction() {
-    var x = document.getElementById("myTopnav");
+    const x = document.getElementById("myTopnav");
     console.log(x)
     if (x.className === "topnav") {
         x.className += " responsive";
@@ -8,7 +8,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
+//Home slider 
 function currentSlide(dotNumber){
     let heroArea = document.querySelector("body > section.hero")
     if(dotNumber === 1) {
