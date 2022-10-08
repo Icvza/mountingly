@@ -13,6 +13,7 @@ function fetchServices() {
 
 function appenedServicestoDom(services) {
 
+
      const products = services.map((service) => {
           //main div
           const div = document.createElement('div')
@@ -23,6 +24,7 @@ function appenedServicestoDom(services) {
           //img div
           const img = document.createElement('img')
           img.classname = 'servImage'
+          img.src= "https://picsum.photos/200"
           imgDiv.append(img)
           //content container
           const contContainer = document.createElement('div')
@@ -46,14 +48,14 @@ function appenedServicestoDom(services) {
           return div
      })
      
-     // append each div to dom
+    
      const ul = document.createElement('div')
      ul.id = "service-list-ul"
      servicesDiv.append(ul)
      console.log(products)
-     products.forEach((brew) => {
+     products.forEach((service) => {
           // const ul = document.querySelector("#service-list")
-          ul.append(brew)
+          ul.append(service)
      })
 
 }
