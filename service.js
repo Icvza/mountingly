@@ -48,7 +48,7 @@ function appenedServicestoDom(services) {
           return div
      })
      
-    
+     
      const ul = document.createElement('div')
      ul.id = "service-list-ul"
      servicesDiv.append(ul)
